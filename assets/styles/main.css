@@ -1,0 +1,56 @@
+.sections {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.calc1 {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 15px;
+
+}
+
+.common-width {
+    margin: 20px;
+    width: 150px;
+}
+
+.operation-group {
+    display: flex;
+
+    align-items: center;
+    gap: 5px;
+
+
+}
+
+.operation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 3em;
+    height: 1.5em;
+
+    border: lightgray solid 0.5px;
+
+
+}
+
+.operation_radio:checked+.operation {
+    font-size: large;
+    background: lightskyblue;
+    border: none;
+    box-shadow: 4px 4px 10px 4px rgba(34, 60, 80, 0.35);
+}
+
+input[type=radio] {
+    display: none;
+    position: absolute;
+    visibility: hidden;
+
+
+}

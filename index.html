@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/main.css" />
+</head>
+
+<body>
+    <main class="sections">
+
+        <section>
+
+
+            <form class="calc1 common-width">
+                <label for="idFirstNumber">Первое число</label>
+                <input type="text" name="firstNumber" id="idFirstNumber">
+                <div class="operation-group" id="idOperations">
+
+                    <input class="operation_radio" type="radio" name="operat" value="sum" id="idSum" checked>
+                    <label class="operation" for="idSum"> +</label>
+
+                    <input class="operation_radio" type="radio" name="operat" value="sub" id="idSub">
+                    <label class="operation" for="idSub">-</label>
+
+                    <input class="operation_radio" type="radio" name="operat" value="mul" id="idMul">
+                    <label class="operation" for="idMul">*</label>
+
+                    <input class="operation_radio" type="radio" name="operat" value="div" id="idDiv">
+                    <label class="operation" for="idDiv">/</label>
+                </div>
+                <label for="idSecondNumber">Второе число</label>
+                <input type="text" name="secondNumber" id="idSecondNumber">
+                <input type="button" onclick="getRezult()" value="Посчитать">
+                <label for="idRezult">Результат</label>
+                <input type="text" name="rezult" id="idRezult" readonly>
+            </form>
+
+        </section>
+    </main>
+
+    <script src="/assets/js/operations.js"></script>
+</body>
+
+</html>
